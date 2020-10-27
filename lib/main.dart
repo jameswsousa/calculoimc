@@ -90,11 +90,11 @@ class _HomeWidgetState extends State<HomeWidget> {
                       hintText: "Digite seu peso",
                       hintStyle: TextStyle(color: Colors.indigo[200]),
                       enabledBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.indigo)),
+                          borderSide: BorderSide(color: Colors.indigo, width: 2)),
                       focusedBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.indigo)),
+                          borderSide: BorderSide(color: Colors.indigo, width: 2)),
                       border: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.indigo)),
+                          borderSide: BorderSide(color: Colors.indigo, width: 2)),
                       labelText: "Peso (Kg)",
                       labelStyle: TextStyle(color: Colors.indigo, fontSize: 20)),
                 ),
@@ -115,11 +115,11 @@ class _HomeWidgetState extends State<HomeWidget> {
                       hintText: "Digite sua altura(em cm)",
                       hintStyle: TextStyle(color: Colors.indigo[200]),
                       enabledBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.indigo)),
+                          borderSide: BorderSide(color: Colors.indigo, width: 2)),
                       focusedBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.indigo)),
+                          borderSide: BorderSide(color: Colors.indigo, width: 2)),
                       border: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.indigo)),
+                          borderSide: BorderSide(color: Colors.indigo, width: 2)),
                       labelText: "Altura (cm)",
                       labelStyle: TextStyle(color: Colors.indigo, fontSize: 20)),
                 ),
