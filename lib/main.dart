@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    theme: ThemeData(primarySwatch: Colors.pink),
+    theme: ThemeData(primarySwatch: Colors.indigo),
     home: HomeWidget(),
   ));
 }
@@ -47,11 +47,11 @@ class _HomeWidgetState extends State<HomeWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.yellowAccent,
+      backgroundColor: Colors.white,
       appBar: AppBar(
         centerTitle: true,
         title: Text("Calculadora de IMC"),
-        backgroundColor: Colors.pink,
+        backgroundColor: Colors.indigo,
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.refresh),
@@ -72,10 +72,10 @@ class _HomeWidgetState extends State<HomeWidget> {
                 Icon(
                   Icons.person_outline,
                   size: 150,
-                  color: Colors.pink,
+                  color: Colors.indigo,
                 ),
                 TextFormField(
-                  cursorColor: Colors.pink,
+                  cursorColor: Colors.indigo,
                   validator: (value) {
                     if (value.isEmpty) {
                       return "Insira seu peso";
@@ -85,18 +85,18 @@ class _HomeWidgetState extends State<HomeWidget> {
                   keyboardType: TextInputType.number,
                   autofocus: false,
                   textAlign: TextAlign.center,
-                  style: TextStyle(color: Colors.pink, fontSize: 25),
+                  style: TextStyle(color: Colors.indigo, fontSize: 25),
                   decoration: InputDecoration(
                       hintText: "Digite seu peso",
-                      hintStyle: TextStyle(color: Colors.pink[200]),
+                      hintStyle: TextStyle(color: Colors.indigo[200]),
                       enabledBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.pink)),
+                          borderSide: BorderSide(color: Colors.indigo)),
                       focusedBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.pink)),
+                          borderSide: BorderSide(color: Colors.indigo)),
                       border: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.pink)),
+                          borderSide: BorderSide(color: Colors.indigo)),
                       labelText: "Peso (Kg)",
-                      labelStyle: TextStyle(color: Colors.pink, fontSize: 20)),
+                      labelStyle: TextStyle(color: Colors.indigo, fontSize: 20)),
                 ),
                 TextFormField(
                   validator: (value) {
@@ -109,19 +109,19 @@ class _HomeWidgetState extends State<HomeWidget> {
                   
                   autofocus: false,
                   textAlign: TextAlign.center,
-                  cursorColor: Colors.pink,
-                  style: TextStyle(color: Colors.pink, fontSize: 25),
+                  cursorColor: Colors.indigo,
+                  style: TextStyle(color: Colors.indigo, fontSize: 25),
                   decoration: InputDecoration(
                       hintText: "Digite sua altura(em cm)",
-                      hintStyle: TextStyle(color: Colors.pink[200]),
+                      hintStyle: TextStyle(color: Colors.indigo[200]),
                       enabledBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.pink)),
+                          borderSide: BorderSide(color: Colors.indigo)),
                       focusedBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.pink)),
+                          borderSide: BorderSide(color: Colors.indigo)),
                       border: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.pink)),
+                          borderSide: BorderSide(color: Colors.indigo)),
                       labelText: "Altura (cm)",
-                      labelStyle: TextStyle(color: Colors.pink, fontSize: 20)),
+                      labelStyle: TextStyle(color: Colors.indigo, fontSize: 20)),
                 ),
                 SizedBox(
                   height: 20,
@@ -133,12 +133,12 @@ class _HomeWidgetState extends State<HomeWidget> {
                     }
                   },
                   child: Container(
-                    margin: EdgeInsets.all(5),
+                    margin: EdgeInsets.all(10),
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(30),
-                      boxShadow: <BoxShadow>[BoxShadow(offset: Offset(3, 3), blurRadius: 3,color: Colors.pink[800])],
-                      color: Colors.pink,
+                      boxShadow: <BoxShadow>[BoxShadow(offset: Offset(3, 3), blurRadius: 3,color: Colors.indigo[800])],
+                      color: Colors.indigo,
                     ),
                     padding: EdgeInsets.symmetric(vertical: 15, horizontal: 20),
                     child: Text(
@@ -152,7 +152,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                 ),
                 Text(
                   _infoText,
-                  style: TextStyle(fontSize: 25, color: Colors.pink),
+                  style: TextStyle(fontSize: 25, color: Colors.indigo),
                   textAlign: TextAlign.center,
                 )
               ],
