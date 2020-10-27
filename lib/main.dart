@@ -90,13 +90,17 @@ class _HomeWidgetState extends State<HomeWidget> {
                       hintText: "Digite seu peso",
                       hintStyle: TextStyle(color: Colors.indigo[200]),
                       enabledBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.indigo, width: 2)),
+                          borderSide:
+                              BorderSide(color: Colors.indigo, width: 2)),
                       focusedBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.indigo, width: 2)),
+                          borderSide:
+                              BorderSide(color: Colors.indigo, width: 2)),
                       border: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.indigo, width: 2)),
+                          borderSide:
+                              BorderSide(color: Colors.indigo, width: 2)),
                       labelText: "Peso (Kg)",
-                      labelStyle: TextStyle(color: Colors.indigo, fontSize: 20)),
+                      labelStyle:
+                          TextStyle(color: Colors.indigo, fontSize: 20)),
                 ),
                 TextFormField(
                   validator: (value) {
@@ -106,7 +110,6 @@ class _HomeWidgetState extends State<HomeWidget> {
                   },
                   controller: heightController,
                   keyboardType: TextInputType.number,
-                  
                   autofocus: false,
                   textAlign: TextAlign.center,
                   cursorColor: Colors.indigo,
@@ -115,13 +118,17 @@ class _HomeWidgetState extends State<HomeWidget> {
                       hintText: "Digite sua altura(em cm)",
                       hintStyle: TextStyle(color: Colors.indigo[200]),
                       enabledBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.indigo, width: 2)),
+                          borderSide:
+                              BorderSide(color: Colors.indigo, width: 2)),
                       focusedBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.indigo, width: 2)),
+                          borderSide:
+                              BorderSide(color: Colors.indigo, width: 2)),
                       border: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.indigo, width: 2)),
+                          borderSide:
+                              BorderSide(color: Colors.indigo, width: 2)),
                       labelText: "Altura (cm)",
-                      labelStyle: TextStyle(color: Colors.indigo, fontSize: 20)),
+                      labelStyle:
+                          TextStyle(color: Colors.indigo, fontSize: 20)),
                 ),
                 SizedBox(
                   height: 20,
@@ -137,7 +144,12 @@ class _HomeWidgetState extends State<HomeWidget> {
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(30),
-                      boxShadow: <BoxShadow>[BoxShadow(offset: Offset(3, 3), blurRadius: 3,color: Colors.indigo[800])],
+                      boxShadow: <BoxShadow>[
+                        BoxShadow(
+                            offset: Offset(3, 3),
+                            blurRadius: 3,
+                            color: Colors.indigo[800])
+                      ],
                       color: Colors.indigo,
                     ),
                     padding: EdgeInsets.symmetric(vertical: 15, horizontal: 20),
